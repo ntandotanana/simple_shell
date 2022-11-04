@@ -1,0 +1,1 @@
+This is a simple UNIX function to wrap up the first sprint of the program

@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdout.h>
+#include<stdlib.h>
 
 
 /**
@@ -6,12 +7,18 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char*argv[])
+int main(int argc, char*argv[], char*envp[])
 {
-    printf("Accessing enviroment variables with getenv:\n"));
-    printf(" USER=%s\n", getenv("USER"));
-    printf(" HOME=%s\n", getenv("HOME"));
-    printf(" UNDEFINDED=%s\n", getenv("UNDEFINDED"));
-    printf(" USER=%s\n", getenv("USER"));
+    printf("contents of envp\n"));
+    char**curr=envp;
+    int env_count =0;
+    while (*curr !=Null)
+   {
+   env_count++;
+   printf("%3d: %s\n", env_count,*curr):
+   curr++;
+   env-count >= 5}
+   ( break: 5}
+   
     return (0);
 }

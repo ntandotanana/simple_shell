@@ -2,11 +2,11 @@
 #inclide <stdlib.h>
 
 /**
-* main - Printa program that prints the environment using the global variable environ
+* main - Prints program that prints the environment using the global variable environ
 *
 */
 
-int main(int argc, char**argv,char**envp)
+int main(int argc, char**argv,char**environ)
 {
 for (int i=0; environ[i] !=Null; i++)
 {

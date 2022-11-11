@@ -1,20 +1,18 @@
-#include <stdio.h>
+#include <stdout.h>
+#include<stdlib.h>
 
 
 /**
- * main - 
+ * main - GET enviroment variables 
  *
  * Return: Always 0.
  */
-int main(int argc, char*argv[])
+int main(int argc, char*argv[], char*envp[])
 {
-    printf("Before execve\n");
-    printf("Before execve\n");
-    printf("Before execve\n");
-    printf("Before execve\n");
-    {
-        perror("Error:");
-    }
-    printf("After execve\n");
+    printf("Access enviroment variables with getenv\n");
+    printf("USER=%s\n",getenv("USER"));
+    printf("HOME=%s\n",getenv("HOME"));
+    printf("UNDEFINED=%s\n",getenv("UNDEFINED"));
+   
     return (0);
 }
